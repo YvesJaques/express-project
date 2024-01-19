@@ -1,5 +1,8 @@
-function getMessages(req, res) {
-    res.send('<ul><li>Hello Albert!</li></ul>')
+const path = require('path');
+
+function getMessages(req, res) {    
+    res.sendFile(path.join(__dirname,'..','public','skimountain.jgp'));
+    // res.sendFile('<ul><li>Hello Albert!</li></ul>')
 }
 
 function postMessage(req, res) {
